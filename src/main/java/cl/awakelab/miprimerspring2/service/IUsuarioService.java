@@ -11,4 +11,5 @@ public interface IUsuarioService {
     Usuario actualizarUsuario(Usuario usuarioActualizar, int idUsuario);
     Usuario actualizarUsuario2(Usuario usuarioActualizar);
     void eliminarUsuario(int idUsuario);
+    void eliminarUsuario2(Usuario usuario);
 }

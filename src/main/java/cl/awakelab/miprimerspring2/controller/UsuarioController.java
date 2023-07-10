@@ -37,4 +37,8 @@ public class UsuarioController {
     public void eliminarUsuario(int idUsuario){
         objUsuarioService.eliminarUsuario(idUsuario);
     }
+    @DeleteMapping
+    public void eliminarUsuario(@RequestBody Usuario usuario){
+        objUsuarioService.actualizarUsuario2(usuario);
+    }
 }

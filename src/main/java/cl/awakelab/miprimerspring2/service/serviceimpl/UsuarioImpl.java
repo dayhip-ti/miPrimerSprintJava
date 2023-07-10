@@ -47,4 +47,9 @@ public class UsuarioImpl implements IUsuarioService {
     public void eliminarUsuario(int idUsuario) {
         objUsuarioRepo.deleteById(idUsuario);
     }
+
+    @Override
+    public void eliminarUsuario2(Usuario usuario) {
+        objUsuarioRepo.delete(usuario);
+    }
 }
